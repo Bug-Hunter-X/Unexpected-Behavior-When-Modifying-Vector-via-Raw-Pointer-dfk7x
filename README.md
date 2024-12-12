@@ -1,0 +1,3 @@
+This repository showcases a common yet subtle bug in Rust involving the manipulation of vectors using raw pointers.  The core problem lies in how Rust manages memory and the relationship between a vector and its underlying data. Modifying the vector's data directly using a raw pointer does not update the vector's internal length or capacity information. This can lead to unexpected and potentially dangerous behavior.
+
+The example demonstrates how modification using a raw pointer is not reflected in the vector. The solution involves using the correct methods to modify the vector contents, ensuring data consistency.
